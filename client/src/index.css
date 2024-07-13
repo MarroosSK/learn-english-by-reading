@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+body, html{
+    font-family: "Wittgenstein", serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#layout-main {
+    transition-property:  background, transform,;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+
+.page-transition {
+
+    background: #000;
+    transform: translateY(40px);
+
+}
+
+/* OLD */
+/* #layout-main {
+    transition-property: opacity, background, transform, filter;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+
+.page-transition {
+    opacity: 50;
+    background: #000;
+    transform: translateY(40px);
+    filter: blur(12px);
+} */
