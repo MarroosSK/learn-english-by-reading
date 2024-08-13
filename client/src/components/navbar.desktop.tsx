@@ -9,6 +9,7 @@ import {
 import NavbarLink from "./navbar-link";
 import { NavbarLinkI } from "../types/types";
 import { navbarData } from "../constants/navbar-data";
+import { Button } from "./ui/button";
 
 interface NavbarDesktopI {
   searchQuery: string;
@@ -44,20 +45,22 @@ const NavbarDesktop = ({
           data-id="search-input"
         />
         <SignedOut>
-          <button
+          <Button
             className="bg-sky-800 text-lg px-4 py-2 rounded-md hover:bg-stone-300 text-white hover:text-sky-800 transition-all ease-in-out"
             data-id="sign-in-btn"
+            asChild
           >
             <SignInButton />
-          </button>
+          </Button>
         </SignedOut>
         <SignedIn>
-          <button
+          <Button
             className="bg-stone-800 text-lg px-4 py-2 rounded-md hover:bg-stone-300 text-white hover:text-red-800 transition-all ease-in-out"
             data-id="sign-out-btn"
+            asChild
           >
             <SignOutButton />
-          </button>
+          </Button>
         </SignedIn>
       </div>
     </>
